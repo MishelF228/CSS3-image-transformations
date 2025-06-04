@@ -1,0 +1,185 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0; /* опционально — нейтральный фон */
+}
+
+.title{
+  position: absolute;
+  top: 20px;
+  align-items: center;
+}
+
+.vintage-wrapper {
+  background: white;
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vintage-frame {
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.vintage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(60%) grayscale(20%) contrast(1.1);
+  background: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: white;
+}
+
+.row {
+  display: flex;
+  gap: 4px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-image: url("img/tic-tac-toe.png");
+  background-size: 300%; /* 3x3 сетка */
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+.cell[data-pos="0-0"] { background-position: 0% 0%; }
+.cell[data-pos="0-1"] { background-position: 50% 0%; }
+.cell[data-pos="0-2"] { background-position: 100% 0%; }
+
+.cell[data-pos="1-0"] { background-position: 0% 50%; }
+.cell[data-pos="1-1"] { background-position: 50% 50%; }
+.cell[data-pos="1-2"] { background-position: 100% 50%; }
+
+.cell[data-pos="2-0"] { background-position: 0% 100%; }
+.cell[data-pos="2-1"] { background-position: 50% 100%; }
+.cell[data-pos="2-2"] { background-position: 100% 100%; }
+
+.field {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 10px;
+  filter: grayscale(100%);
+}
+
+.middle {
+  display: flex;
+  gap: 10px;
+}
+
+.dino-stack {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: white;
+}
+
+.dino {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.shadow {
+  filter: blur(8px) brightness(0);
+  z-index: 0;
+}
+
+.front {
+  filter: invert(25%) sepia(100%) saturate(500%) hue-rotate(180deg);
+  z-index: 1;
+}
+
+.seagull-block {
+  background: linear-gradient(to bottom right, #007bff, white);
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* тень блока */
+  margin-top: 40px;
+  max-height: 150px;
+}
+
+.seagull-img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.butterfly-wrapper {
+  background: white;
+  padding: 20px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.butterfly-img {
+  width: 200px;
+  height: auto;
+  filter: invert(100%);
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  display: block;
+}
+
+.theater-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 40px;
+}
+
+.theater-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: blur(6px);
+}
+
+.stage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); /* bg-shadow effect */
+}
+
+img {
+  max-height: 200px;
+  height: auto;
+  width: auto;
+}

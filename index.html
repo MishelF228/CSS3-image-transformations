@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS3 Image Transformations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 class="title">CSS3 Effects gallery</h1>
+
+  <div class="vintage-wrapper">
+    <div class="vintage-frame">
+      <img src="img/penguins.jpg" alt="Vintage Penguins" class="vintage-img" />
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <!-- Верхняя рамка -->
+    <div class="row">
+      <div class="cell o" data-pos="0-0"></div>
+      <div class="cell o" data-pos="0-1"></div>
+      <div class="cell o" data-pos="0-2"></div>
+      <div class="cell o" data-pos="0-1"></div>
+      <div class="cell o" data-pos="0-2"></div>
+      <div class="cell o" data-pos="0-1"></div>
+      <div class="cell o" data-pos="0-0"></div>
+    </div>
+
+    <!-- Средний ряд с полем -->
+    <div class="middle">
+      <div class="col">
+        <div class="cell o" data-pos="0-0"></div>
+        <div class="cell o" data-pos="1-0"></div>
+        <div class="cell o" data-pos="2-0"></div>
+      </div>
+      <img src="img/football_field.jpg" class="field" />
+      <div class="col">
+        <div class="cell o" data-pos="0-2"></div>
+        <div class="cell o" data-pos="1-2"></div>
+        <div class="cell o" data-pos="2-2"></div>
+      </div>
+    </div>
+
+    <!-- Нижняя рамка -->
+    <div class="row">
+      <div class="cell x" data-pos="2-0"></div>
+      <div class="cell x" data-pos="2-1"></div>
+      <div class="cell x" data-pos="2-2"></div>
+      <div class="cell x" data-pos="2-1"></div>
+      <div class="cell x" data-pos="2-0"></div>
+      <div class="cell x" data-pos="2-1"></div>
+      <div class="cell x" data-pos="2-2"></div>
+    </div>
+  </div>
+
+  <div class="dino-stack">
+    <img src="img/dinosaur.png" alt="Shadow Dino" class="dino shadow" />
+    <img src="img/dinosaur.png" alt="Blue Dino" class="dino front" />
+  </div>
+
+  <div class="seagull-block">
+    <img src="img/seagull.png" alt="Seagull" class="seagull-img" />
+  </div>
+
+  <div class="butterfly-wrapper">
+    <img src="img/butterfly.jpg" alt="Inverted Butterfly" class="butterfly-img" />
+  </div>
+
+  <div class="theater-wrapper">
+    <img src="img/theater_stage.jpg" alt="Stage" class="theater-img" />
+    <div class="stage-text">Presenting</div>
+  </div>
+</body>
+</html>
